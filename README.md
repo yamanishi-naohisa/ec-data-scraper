@@ -38,6 +38,30 @@ pip install -r requirements.txt
 
 ## 使用方法
 
+### 基本的な使い方
+
+```bash
+# データを取得してデータベースに保存
+python main.py scrape <URL1,URL2,...>
+
+# データをCSV形式でエクスポート
+python main.py export csv
+
+# データをExcel形式でエクスポート
+python main.py export excel
+
+# データベースの統計情報を表示
+python main.py stats
+
+# サマリーレポートを出力
+python main.py report
+```
+
+### 設定
+
+`.env`ファイルを作成して、必要に応じて設定を変更できます。
+`.env.example`を参考にしてください。
+
 詳細は `詳細仕様書.md` を参照してください。
 
 ## プロジェクト構成
